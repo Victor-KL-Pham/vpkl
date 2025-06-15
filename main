@@ -45,7 +45,7 @@ getgenv().bgsInfConfig = {
     IGNORE_MINIGAME = false,
     IGNORE_MYSTERY_BOX_GEM_CAP = false,
     IGNORE_SEASON_CHALLENGES = true,
-    AUTO_INDEX = {"The Overworld", "Minigame Paradise"},
+    -- AUTO_INDEX = {"The Overworld", "Minigame Paradise"},
     SHOW_MULTIPLIER = true,
 	
     ENABLE_EXIT = false,
