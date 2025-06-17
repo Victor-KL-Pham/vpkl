@@ -35,17 +35,15 @@ setfpscap(5)  -- number = fps
 
 getgenv().bgsInfConfig = {
     ADD_FRIEND = true,
-    SUMMER_EVENT = true,
     AUTO_UPDATE_RESTART = true,
     SHOW_MULTIPLIER = true,
     ALWAYS_INFINITY_ELIXIR = true,
     ALWAYS_EGG_ELIXIR = true,
-    AUTO_BOUNTY_RIFT = true,
-    MIN_RIFT_MULTIPLIER = 25,
+
     IGNORE_MINIGAME = false,
     IGNORE_MYSTERY_BOX_GEM_CAP = false,
     IGNORE_SEASON_CHALLENGES = true,
-    -- AUTO_INDEX = {"The Overworld", "Minigame Paradise"},
+    AUTO_INDEX = {"The Overworld", "Minigame Paradise"},
     SHOW_MULTIPLIER = true,
 	
     ENABLE_EXIT = false,
@@ -53,9 +51,9 @@ getgenv().bgsInfConfig = {
     PURCHASE_ALIENSHOP = true,
     PURCHASE_BLACKMARKET = true,
     PURCHASE_DICE_MERCHANT = true,
-    PURCHASE_EVENT_SHOP = true,
-    PURCHASE_TRAVELING_MERCHANT = true,
-    RESTOCK_SHOP = "Traveling Merchant",
+    -- PURCHASE_EVENT_SHOP = true,
+    -- PURCHASE_TRAVELING_MERCHANT = true,
+    RESTOCK_SHOP = "Blackmarket",
 
     USE_ROYAL_KEY = false,
     USE_GOLDEN_KEY = false,
@@ -73,7 +71,9 @@ getgenv().bgsInfConfig = {
     ENCHANT_TEAMUP_TIER = 4,
 
     IGNORE_EVENT_STARTER_HATCH = false,
-    HATCH_1X_EGG = {"Light Egg", "Dark Egg"},
+    AUTO_BOUNTY_RIFT = true,
+    MIN_RIFT_MULTIPLIER = 10,
+    HATCH_1X_EGG = {"Chance Egg", "Neon Egg"}, 
     PETS_TO_DELETE = {"Crystal Unicorn", "Popsicle Trio", "Inferno Cube", "Hexarium", "Virus", "Ring Master", "Crimson Butterfly", "Demonic Hydra", "Kiwi Dragon", "Rainbow Shock", "Space Invader", "Prismatic", "Neon Wire Eye", "Bionic Shard", "Mangorium", "Fossilus", "Emerald Golem", "Magmas", "Moonburst", "Sunburst", "Voidflame", "Radiant Elemental"},
 
     WEBHOOK_URL = 'https://discord.com/api/webhooks/1364436299263508531/0lcKDDVxZ67N88nlZQ9IeOT6YqknaoN3af-FltR_Fjeizw2C6VTYELfyjKWK1ioqE6v8',
