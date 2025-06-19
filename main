@@ -72,7 +72,7 @@ getgenv().bgsInfConfig = {
 
     IGNORE_EVENT_STARTER_HATCH = false,
     AUTO_BOUNTY_RIFT = true,
-    MIN_RIFT_MULTIPLIER = 25,
+    MIN_RIFT_MULTIPLIER = 10,
     HATCH_1X_EGG = {"Voidcrystal Egg"}, 
     PETS_TO_DELETE = {"Crystal Unicorn", "Popsicle Trio", "Inferno Cube", "Hexarium", "Virus", "Ring Master", "Crimson Butterfly", "Demonic Hydra", "Kiwi Dragon", "Rainbow Shock", "Space Invader", "Prismatic", "Neon Wire Eye", "Bionic Shard", "Mangorium", "Fossilus", "Emerald Golem", "Magmas", "Moonburst", "Sunburst", "Voidflame", "Radiant Elemental"},
 
