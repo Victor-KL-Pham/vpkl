@@ -6,7 +6,7 @@ getgenv().Config = {
             { Name = "Avernus" },
         },
         ["normalPets"] = {
-            { Name = "Jackpot", Shiny = true, Mythic = true },
+            { Name = "Glyph Warrior", Shiny = false, Mythic = true },
         }
     }
 }
