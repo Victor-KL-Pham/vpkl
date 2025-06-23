@@ -1,11 +1,34 @@
+setfpscap(5)
 script_key = "pVIYNvyCYdbpbnEHwqtJiQqvKsTUuPFR";
 getgenv().GDO_TOWER_DEFENSE = true
 --look in buyer-announcements for correct names.
-getgenv().GTOWER_DEFENSE_INFINITY_PET = {"Crystal Giraffe","Nightmare Cyclops","Blurred Owl","Nuclear Dominus","Arcade Angelus","Jetpack Cat","Abyssal Turtle","Electric Eel","Forged Armadillo","Comet Dragon","Disco Ball Agony","Torpedo Cat","Shadow Pegasus","Ooze Dragon","Tech Samurai Axolotl","Potion Penguin","Umbrella Elephant","Old Wizard Cat","Frostbyte Griffin","Detective Bunny","Knight Chicken","Flamethrower Spider","Demolition Panda"}
-getgenv().GGFX_MODE = 2  --1 = REMOVE_TEXTURES : more stable! but no visuals
+getgenv().GTOWER_DEFENSE_INFINITY_PET = {"Crystal Giraffe","Nightmare Cyclops","Blurred Owl","Nuclear Dominus","Arcade Angelus","Electric Eel","Abyssal Turtle","Forged Armadillo","Comet Dragon","Torpedo Cat","Disco Ball Agony","Ooze Dragon","Tech Samurai Axolotl","Potion Penguin","Umbrella Elephant","Old Wizard Cat","Frostbyte Griffin","Detective Bunny","Knight Chicken","Flamethrower Spider","Demolition Panda"}
+getgenv().GGFX_MODE = 1  --1 = REMOVE_TEXTURES : more stable! but no visuals
 getgenv().GZONE_TO = 99 -- or change to 999 to join from last world
-getgenv().GWEBHOOK_USERID = "642772337220911105" -- your discord userID, not your name. numerical id.
-getgenv().GWEBHOOK_LINK = "https://discord.com/api/webhooks/1386700506348392489/xDXj1xhXeC5EF5i7TWw8RNKIteOEugP1seWSPL3Aq_gG4Q2Bup4pjDBtRlXDX6ikatTo" -- a webhook URL from your private discord channel.
-getgenv().GMAIL_RECEIVERS = {"kaldtemigchop"} -- an account to receive hatched Huges etc
-getgenv().GMAX_MAIL_COST = "2m" -- this can limit how many mails sent/day
+getgenv().GWEBHOOK_USERID = "642772337220911105"
+getgenv().GWEBHOOK_LINK = "https://discord.com/api/webhooks/1386700506348392489/xDXj1xhXeC5EF5i7TWw8RNKIteOEugP1seWSPL3Aq_gG4Q2Bup4pjDBtRlXDX6ikatTo"
+getgenv().GMAIL_RECEIVERS = {"kaldtemigchop"}
+getgenv().GMAX_MAIL_COST = "1m"
+
+getgenv().GMAIL_ITEMS = {
+["All Huges"] = {Class = "Pet", Id = "All Huges", MinAmount = 1},
+["TNT Capypara"] = {Class = "Tower", Id = "TNT Capypara", MinAmount = 1},
+["Mechanical Griffin"] = {Class = "Tower", Id = "Mechanical Griffin", MinAmount = 1},
+["Zeus Bear"] = {Class = "Tower", Id = "Zeus Bear", MinAmount = 1},
+["Helicoprer Corgi"] = {Class = "Tower", Id = "Helicoprer Corgi", MinAmount = 1},
+["Arcade Meebo in a Spaceship"] = {Class = "Tower", Id = "Arcade Meebo in a Spaceship", MinAmount = 1 },
+["Tower Defense Gift"] = {Class = "Lootbox", Id = "Tower Defense Gift", MinAmount = 80},
+["Magma Tower Defense Gift"] = {Class = "Lootbox", Id = "Magma Tower Defense Gift", MinAmount = 40},
+["Matrix Tower Defense Gift"] = {Class = "Lootbox", Id = "matrix Tower Defense Gift", MinAmount = 40},
+
+
+["Send Diamonds"] = {Class = "Currency", Id = "Diamonds", KeepAmount = "5m", MinAmount = "9999b"},
+["Hype Egg 2"] = {Class = "Lootbox", Id = "Hype Egg 2", MinAmount = 1},
+["Daycare egg 5"] = {Class = "Egg", Id = "Huge Machine Egg 5", MinAmount = 1},
+["Secret pet1"] = {Class = "Pet", Id = "Rainbow Swirl", MinAmount = 1, AllVariants = true},
+["Secret pet2"] = {Class = "Pet", Id = "Banana", MinAmount = 1, AllVariants = true},
+["Secret pet3"] = {Class = "Pet", Id = "Coin", MinAmount = 1, AllVariants = true},
+["Secret pet4"] = {Class = "Pet", Id = "Yellow Lucky Block", MinAmount = 1, AllVariants = true},
+}
+
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/34915da4ad87a5028e1fd64efbe3543f.lua"))()
