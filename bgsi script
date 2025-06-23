@@ -1,0 +1,85 @@
+script_key = "nuTNFtTiBVxcMASZyRpAeoAlHRAPFoLJ";
+getgenv().Config = {
+    MainReceive = {"kaldtemigchop"},
+    petList = {
+        ["Secret"] = {
+            { Name = "Avernus" },
+        },
+        ["normalPets"] = {
+            { Name = "Glyph Warrior", Shiny = false, Mythic = true },
+        }
+    }
+}
+
+task.spawn(function()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/793674f6bc0a80e1c748fd75994d1607.lua"))()
+end)
+task.wait(120)
+
+local keys = {  -- Add as many key
+    "eaIXeLOWoOSaFfRVnmFtpRtBVygJzyIR",
+    "BORMYVfnWfvzAatItdackJJIjGBURdFD",
+    "iAkooeecMcjQbRRJbXEFXwaTNCwaJIce",
+    "OfOGfCSPqabhWPstGCgPGPDzDcXukdhd",
+    "TwiPzXgBSFAhmbtBVseQuskMEfrLpiqu",
+    "bPfrQIRhAulmQKNcRuDGnuIzIHQbTfEy",
+    "nYFcMoAbjlbCienTHFtLPBQhJNMkqXpN",
+    "oIkFpeNQanqcdqgqYAbiHnSuLTesjZcK",
+    "doqHYGEbgMxdHAhSNGhtzOtSuUabFweD",
+    "sbJCGVTWcqRhNJoSiOeYxZZoQffLplaU",
+}
+
+script_key = keys[math.random(#keys)];
+
+setfpscap(5)  -- number = fps
+
+getgenv().bgsInfConfig = {
+    ADD_FRIEND = true,
+    AUTO_UPDATE_RESTART = true,
+    SHOW_MULTIPLIER = true,
+    ALWAYS_INFINITY_ELIXIR = true,
+    ALWAYS_EGG_ELIXIR = true,
+
+    IGNORE_MINIGAME = false,
+    IGNORE_MYSTERY_BOX_GEM_CAP = false,
+    IGNORE_SEASON_CHALLENGES = true,
+    -- AUTO_INDEX = {"The Overworld", "Minigame Paradise"},
+    SHOW_MULTIPLIER = true,
+	
+    ENABLE_EXIT = false,
+
+    PURCHASE_ALIENSHOP = true,
+    PURCHASE_BLACKMARKET = true,
+    PURCHASE_DICE_MERCHANT = true,
+    -- PURCHASE_EVENT_SHOP = true,
+    PURCHASE_TRAVELING_MERCHANT = true,
+    RESTOCK_SHOP = "Dice Merchant",
+
+    USE_ROYAL_KEY = false,
+    USE_GOLDEN_KEY = false,
+    USE_DICE_KEY = true,
+    USE_MYSTERY_BOX = true,
+    FOCUS_DICE = true,
+
+    RARITY_TO_DELETE = {"Common", "Unique", "Rare", "Epic", "Legendary"},
+    RARITY_TO_SHINY = {"Common", "Unique", "Rare", "Epic", "Legendary"},
+    MAX_LEGENDARY_TIER_TO_DELETE = 2,
+    DELETE_LEGENDARY_SHINY = true,
+    DELETE_LEGENDARY_MYTHIC = false,
+
+    ENCHANT_TEAMUP = true,
+    ENCHANT_TEAMUP_TIER = 4,
+
+    IGNORE_EVENT_STARTER_HATCH = false,
+    AUTO_BOUNTY_RIFT = true,
+    MIN_RIFT_MULTIPLIER = 10,
+    HATCH_1X_EGG = {"Voidcrystal Egg"}, 
+    PETS_TO_DELETE = {"Crystal Unicorn", "Popsicle Trio", "Inferno Cube", "Hexarium", "Virus", "Ring Master", "Crimson Butterfly", "Demonic Hydra", "Kiwi Dragon", "Rainbow Shock", "Space Invader", "Prismatic", "Neon Wire Eye", "Bionic Shard", "Mangorium", "Fossilus", "Emerald Golem", "Magmas", "Moonburst", "Sunburst", "Voidflame", "Radiant Elemental"},
+
+    WEBHOOK_URL = 'https://discord.com/api/webhooks/1364436299263508531/0lcKDDVxZ67N88nlZQ9IeOT6YqknaoN3af-FltR_Fjeizw2C6VTYELfyjKWK1ioqE6v8',
+    DISCORD_ID = '642772337220911105',
+    WEBHOOK_ODDS = 50000000,
+    SHOW_PET_WEBHOOK_USERNAME = true,
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/e2d15fd8d5fd053a359cc3e296c68150.lua"))()
