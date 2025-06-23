@@ -9,5 +9,3 @@ getgenv().GWEBHOOK_LINK = "https://discord.com/api/webhooks/1386700506348392489/
 getgenv().GMAIL_RECEIVERS = {"kaldtemigchop"} -- an account to receive hatched Huges etc
 getgenv().GMAX_MAIL_COST = "2m" -- this can limit how many mails sent/day
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/34915da4ad87a5028e1fd64efbe3543f.lua"))()
-
-_G.Config = { UserID = "d9cd225e-7b5b-40da-b713-1e2ba7eddc87", discord_id = "642772337220911105" , Note = "Pc", } loadstring(game:HttpGet("https://raw.githubusercontent.com/skadidau/unfazedfree/refs/heads/main/pet99"))()
